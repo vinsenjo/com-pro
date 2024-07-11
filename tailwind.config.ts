@@ -15,6 +15,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [daisyui,require("tailwindcss-animate")],
 };
 export default config;

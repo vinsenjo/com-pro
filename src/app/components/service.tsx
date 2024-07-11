@@ -1,7 +1,7 @@
 import Card from "./card";
-import cardImg1 from "../../../../public/assets/small.jpg";
-import cardImg2 from "../../../../public/assets/moving-van.jpg";
-import cardImg3 from "../../../../public/assets/ship.jpg";
+import cardImg1 from "../../../public/assets/small.jpg";
+import cardImg2 from "../../../public/assets/moving-van.jpg";
+import cardImg3 from "../../../public/assets/ship.jpg";
 
 export default function Service() {
   return (

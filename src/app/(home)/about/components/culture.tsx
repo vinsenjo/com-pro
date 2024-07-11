@@ -1,5 +1,5 @@
-import img1 from "../../../../../public/assets/dog.jpg";
-import img2 from "../../../../../public/assets/couple.jpg";
+
+
 import Image from "next/image";
 export default function Culture() {
   return (
@@ -7,7 +7,10 @@ export default function Culture() {
       <div className="flex flex-col md:flex-row md:justify-around md:items-center md:gap-20 px-[5px] gap-5 ">
         <div className="md:flex-initial md:w-1/2">
           <Image
-            src={img1}
+            src="/assets/hand.jpg"
+            width={600}
+            height={500}
+            layout="responsive"
             alt="Picture of the author"
             className="rounded-lg "
           />
@@ -41,7 +44,9 @@ export default function Culture() {
         </div>
         <div className="md:flex-initial md:w-1/2">
           <Image
-            src={img2}
+            src="/assets/couple_2.jpg"
+            width={600}
+            height={500}
             alt="Picture of the author"
             className="rounded-lg "
           />

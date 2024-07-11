@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import img from "../../../../public/assets/logo.png"
+import img from "../../../public/assets/logo.png"
 import { useState } from "react";
 import Link from "next/link";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="">
-      <nav className=" flex md:shrink-0 text-xl  bg-white  text-black p-4 lg:p-6  justify-between  lg:items-center  md:pt-[20px] lg:h-[80px] xl:p-8 ">
+      <nav className="max-w-screen-2xl flex md:shrink-0 text-xl  bg-white  text-black p-4 lg:p-6  justify-between  lg:items-center  md:pt-[20px] lg:h-[80px] xl:p-8 ">
         <div className="w-[30%] text-start ">
         <Image
           src={img}
@@ -26,7 +26,8 @@ export default function Navbar() {
             contact us
           </button>
         </div>
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden hover:scale-110 duration-300">
+        
+        <button title="burger" onClick={() => setIsOpen(!isOpen)} className="md:hidden hover:scale-110 duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -38,8 +39,8 @@ export default function Navbar() {
         </button>
       </nav>
       <div
-        className={`h-[400px]  lg:hidden bg-white bg-opacity-[97%] absolute w-[100%] scroll-x ${
-          isOpen ? "block" : " hidden"
+        className={`h-[400px]  lg:hidden bg-white  absolute w-[100%] scroll-x ${
+          isOpen ? "block relative" : " hidden"
         }`}
       >
         <div className="text-black flex flex-col text-center font-bold text-xl  overflow-hidden ">
