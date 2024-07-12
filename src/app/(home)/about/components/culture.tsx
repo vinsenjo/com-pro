@@ -1,10 +1,12 @@
 
-
+'use client'
+import {motion} from "framer-motion"
 import Image from "next/image";
 export default function Culture() {
   return (
     <section className="flex flex-col gap-5 md:px-[100px] text-black mt-[20px] p-[30px]">
-      <div className="flex flex-col md:flex-row md:justify-around md:items-center md:gap-20 px-[5px] gap-5 ">
+      <div 
+            className="flex  flex-col md:flex-row md:justify-around md:items-center md:gap-20 px-[5px] gap-5 ">
         <div className="md:flex-initial md:w-1/2">
           <Image
             src="/assets/hand.jpg"
@@ -15,7 +17,7 @@ export default function Culture() {
             className="rounded-lg "
           />
         </div>
-        <div className="md:flex-initial md:w-1/2  bg-[#F5F7F8] md:px-[50px] md:p-[30px] p-[20px] rounded-lg">
+        <motion.div initial={{ translateX: 100, opacity: 0 }}  whileInView={{ opacity: 1, translateX: 0 }} className="duration-300 md:flex-initial md:w-1/2  bg-[#F5F7F8] md:px-[50px] md:p-[30px] p-[20px] rounded-lg">
           <h3 className="font-bold text-2xl pb-3">Our Story</h3>
           <p className="text-justify">
             Founded in 1998, Flazz House Moving has been a pioneer in the house
@@ -27,7 +29,7 @@ export default function Culture() {
             recognized leader in the field, thanks to our commitment to
             excellence and customer satisfaction
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="pt-[20px]   flex flex-col md:flex-row md:justify-around md:gap-20 md:items-center px-[5px] gap-5">
         <div className="md:flex-initial md:w-1/2 hidden md:block bg-[#F5F7F8] md:px-[50px] md:p-[30px] p-[20px] rounded-lg">

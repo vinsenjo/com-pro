@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer max-w-screen-2xl bg-[#235d58] text-black font-bold  p-10">
+    <footer className="footer max-w-screen-2xl bg-[#235d58] text-white font-semibold  p-10">
     <nav>
       <h6 className="footer-title">Services</h6>
       <a className="link link-hover">Branding</a>

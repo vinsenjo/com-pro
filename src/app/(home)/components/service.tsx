@@ -1,7 +1,7 @@
 import Card from "./card";
-import cardImg1 from "../../../public/assets/small.jpg";
-import cardImg2 from "../../../public/assets/moving-van.jpg";
-import cardImg3 from "../../../public/assets/ship.jpg";
+import cardImg1 from "../../../../public/assets/small.jpg";
+import cardImg2 from "../../../../public/assets/moving-van.jpg";
+import cardImg3 from "../../../../public/assets/ship.jpg";
 
 export default function Service() {
   return (
@@ -9,7 +9,7 @@ export default function Service() {
       <h2 className="text-3xl pb-3  text-black  md:self-start border-b-2">
         Our Service
       </h2>
-      <div className="pt-[40px] md:pt-[50px] flex flex-col md:flex-wrap md:flex-row md:gap-20 gap-5">
+      <div className="pt-[40px] md:pt-[50px] flex flex-col  md:flex-row md:gap-20 gap-5">
         <Card
           img={cardImg1}
           title="Local Home Moving"
