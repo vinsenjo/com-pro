@@ -9,7 +9,7 @@ interface IProps {
 
 export default function Card({ img, title, caption }: IProps) {
   return (
-    <div className="overflow-hidden  pb-[20px] flex flex-col bg-white  border-2  text-black group w-[400px]  lg:rounded-2xl duration-100  shadow-md hover:shadow-xl grayscale-[25%] hover:grayscale-0">
+    <div className="overflow-hidden  pb-[20px] flex flex-col bg-white  border-2  text-black group  lg:w-[400px]  rounded-2xl duration-100  shadow-md hover:shadow-xl">
       <Image
        priority 
        src={img} 

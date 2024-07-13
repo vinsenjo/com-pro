@@ -10,7 +10,7 @@ export default function About() {
       <AboutUs />
       <Visi />
       <Culture />
-      <TeamsAbout/>
+     
       <Fetching/>
     </div>
   );

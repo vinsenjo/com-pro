@@ -5,7 +5,7 @@ interface IProps {
 
 export default function TestCard({ title, caption }: IProps) {
   return (
-    <div className="text-black h-max w-max  bg-white group hover:scale-105  p-[30px] rounded-lg hover:shadow-lg  duration-200">
+    <div className="text-black lg:w-auto max-w-[300px] lg:max-w-[400px] min-h-[200px] h-max w-max  bg-white group hover:scale-105  p-[30px] rounded-lg hover:shadow-lg  duration-200">
       <svg className="text-[#235d58]"
         xmlns="http://www.w3.org/2000/svg"
         width="1.19em"

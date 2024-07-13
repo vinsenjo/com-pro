@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" fixed w-screen z-10 bg-black/10">
-      <nav className=" flex md:shrink-0 text-xl   backdrop-blur-sm  text-black p-4 lg:p-6  justify-between  lg:items-center  md:pt-[20px] lg:h-[80px] xl:p-8 ">
+    <div className=" fixed w-screen z-10 bg-opacity-90 ">
+      <nav className=" flex md:shrink-0 text-xl   backdrop-blur-md  text-black p-4 lg:p-6  justify-between  lg:items-center  md:pt-[20px] lg:h-[80px] xl:p-8 ">
         <div className="w-[30%] text-start ">
           <Image
             src={img}
@@ -17,7 +17,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className="lg:flex gap-7 md:gap-10 hidden  font-bold text-xl">
+        <div className="lg:flex gap-7 md:gap-10 hidden pr-4  font-bold text-xl">
           <Link
             href="/"
             className="hover:scale-150 hover:font-bold duration-200"
@@ -43,11 +43,11 @@ export default function Navbar() {
             Team
           </Link>
         </div>
-        <div className="w-[30%] text-end  lg:flex hidden justify-end">
+        {/* <div className="w-[30%] text-end  lg:flex hidden justify-end">
           <button className=" text-white font-bold text-center bg-[#235d58] hover:scale-110 duration-300 w-[140px] h-[60px] rounded-full">
             contact us
           </button>
-        </div>
+        </div> */}
 
         <button
           title="burger"
@@ -67,35 +67,35 @@ export default function Navbar() {
       <motion.div
         initial={{ translateX: 100, opacity: 0 }}
         whileInView={{ opacity: 1, translateX: 0 }}
-        className={`h-[400px] backdrop-blur-sm bg-black/80 duration-100 lg:hidden absolute w-[100%] scroll-x ${
+        className={`h-[400px] py-10 backdrop-blur-sm  bg-black/80 duration-75 lg:hidden absolute w-[100%] scroll-x ${
           isOpen ? "block relative" : " hidden"
         }`}
       >
         <div className="text-white flex flex-col text-center font-bold text-xl  overflow-hidden ">
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            className="py-[20px] hover:scale-125 "
+            className="py-[20px] hover:scale-125 hover:bg-black "
             href="/"
           >
             Home
           </Link>
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            className="py-[20px] hover:scale-125"
+            className="py-[20px] hover:scale-125 hover:bg-black"
             href="/about"
           >
             About
           </Link>
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            className="py-[20px] hover:scale-125"
+            className="py-[20px] hover:scale-125 hover:bg-black"
             href="/"
           >
             Service
           </Link>
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            className="py-[20px] hover:scale-125"
+            className="py-[20px] hover:scale-125 hover:bg-black"
             href="/"
           >
             Team

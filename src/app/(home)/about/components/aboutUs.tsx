@@ -12,11 +12,10 @@ export default function AboutUs() {
           src={img}
           alt="Picture of the author"
           priority
-          className="md:w-[2000px] w-[800px]  rounded-lg  "
+          className="md:w-[2000px] w-[800px] rounded-t-xl  lg:rounded-xl  "
         />
       </div>
-      <motion.div initial={{ translateX: 100, opacity: 0 }}
-          whileInView={{ opacity: 1, translateX: 0 }}   className=" duration-300 pt-5 place-content md:flex-initial md:w-1/2 ">
+      <div   className="bg-gradient-to-r from-[#e1ece8] to-[#f1eedd] duration-300 px-5 lg:px-14 rounded-b-xl lg:rounded-xl py-5 lg:py-32 place-content md:flex-initial md:w-1/2 ">
         <h1 className="text-4xl font-bold">About Us</h1>
         <p className="text-justify pt-4">
           Welcome to Flazz, your trusted partner for all your home moving needs.
@@ -31,7 +30,7 @@ export default function AboutUs() {
           priority, and we&apos;re here to make your moving journey seamless and
           satisfying.
         </p>
-      </motion.div>
+      </div>
     </div>
   );
 }
