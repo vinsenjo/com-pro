@@ -4,7 +4,8 @@ export default async function FetchingServer() {
   })
 
   const user  = await res.json();
-
+  console.log(user);
+  
   return (
         <div>
               <h1>Fetching Data</h1>

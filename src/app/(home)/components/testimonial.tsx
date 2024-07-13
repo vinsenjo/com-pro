@@ -2,6 +2,7 @@ import TestCard from "./testi-card";
 
 export default function Testi() {
   return (
+    <div className="max-w-screen-2xl  overflow-hidden text-black">
     <section className="bg-[#F5F7F8] rounded-xl mb-[20px] mx-[20px] px-[20px]  py-[50px] flex flex-col items-center  overflow-x-scroll  ">
       <h2 className="text-3xl lg:self-start ] mb-7 pb-3 border-b-2 border-white border-solid  text-black ">
         What Our Clients Say 
@@ -19,5 +20,6 @@ export default function Testi() {
         <TestCard title="lorem" caption="lorem lsoeeamsd asdsw asleoram sda" />
       </div>
     </section>
+    </div>
   );
 }

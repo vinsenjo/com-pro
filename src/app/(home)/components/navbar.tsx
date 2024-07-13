@@ -7,8 +7,9 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" fixed w-screen z-10 bg-opacity-90 ">
-      <nav className=" flex md:shrink-0 text-xl   backdrop-blur-md  text-black p-4 lg:p-6  justify-between  lg:items-center  md:pt-[20px] lg:h-[80px] xl:p-8 ">
+    <div className="max-w-screen-2xl  overflow-hidden" >
+    <div className="   bg-opacity-90 ">
+      <nav className=" flex md:shrink-0 text-xl   backdrop-blur-md  text-black p-4 lg:p-6  justify-between  lg:items-center  md:pt-[20px] lg:h-[60px] xl:p-8 ">
         <div className="w-[30%] text-start ">
           <Image
             src={img}
@@ -64,11 +65,10 @@ export default function Navbar() {
           </svg>
         </button>
       </nav>
-      <motion.div
-        initial={{ translateX: 100, opacity: 0 }}
-        whileInView={{ opacity: 1, translateX: 0 }}
+      <div
+        
         className={`h-[400px] py-10 backdrop-blur-sm  bg-black/80 duration-75 lg:hidden absolute w-[100%] scroll-x ${
-          isOpen ? "block relative" : " hidden"
+          isOpen ? "absolute " : " hidden"
         }`}
       >
         <div className="text-white flex flex-col text-center font-bold text-xl  overflow-hidden ">
@@ -101,7 +101,8 @@ export default function Navbar() {
             Team
           </Link>
         </div>
-      </motion.div>
+      </div>
+    </div>
     </div>
   );
 }

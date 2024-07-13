@@ -19,7 +19,7 @@ export default function Card({ img, title, caption }: IProps) {
       <div className="bg-white py-[20px] rounded-xl object-cover">
         <p className="text-xl font-bold px-[40px] pt-[10px]">{title}</p>
         <p className="text-sm py-[10px] px-[40px]  ">{caption}</p>
-        <button className="bg-[#235d58] font-semibold text-white mx-[40px] p-[10px] rounded-xl duration-150 border-2 border-black hover:bg-white hover:text-black" >Learn More</button>
+        <button className="bg-[#0d2030] font-semibold text-white mx-[40px] p-[10px] rounded-xl duration-150 border-2 hover:border-black hover:bg-white hover:text-black" >Learn More</button>
       </div>
     </div>
   );
