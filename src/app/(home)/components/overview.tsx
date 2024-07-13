@@ -32,14 +32,14 @@ export default function OverView() {
                 Voluptas, vel!"
           />
           <Rating
-            heading="99%"
+            heading="99,9%"
             caption="Customer Satisfaction"
             content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptas, vel!"
           />
           <Rating
-            heading="26+Yrs"
-            caption="of Exelence"
+            heading="12"
+            caption="Global Offices"
             content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptas, vel!"
           />
