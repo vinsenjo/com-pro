@@ -12,7 +12,7 @@ export default async function Fetching() {
         <h2 className="text-white text-4xl my-3 ">Our Team</h2>
         <div className="grid  lg:grid-cols-3 gap-2 lg:gap-10  justify-center flex-wrap">
           {user.results.map((item: any, index: any) => (
-            <div className="bg-white text-black min-w-[400px] flex flex-col rounded-xl hover:scale-105 duration-200">
+            <div key={index} className="bg-white text-black min-w-[400px] flex flex-col rounded-xl hover:scale-105 duration-200">
               <div className="flex flex-col lg:flex-row items-center gap-2 p-2">
               <img 
                 src={item.picture.large}
