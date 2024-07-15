@@ -6,7 +6,7 @@ import img1 from "../../../../../public/assets/hand.jpg";
 import img2 from "../../../../../public/assets/culture.jpg";
 export default function Culture() {
   return (
-    <div className="max-w-screen-2xl  overflow-hidden">
+    <div className="max-w-screen-2xl  overflow-hidden ">
       <section className=" text-white grid px-2 lg:grid-cols-2 lg:grid-rows-2 gap-1 my-2 lg:mx-10 rounded-xl">
         <div className="   text-sm">
           <Image

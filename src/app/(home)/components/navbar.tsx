@@ -67,7 +67,7 @@ export default function Navbar() {
       </nav>
       <div
         
-        className={`h-[400px] py-10 backdrop-blur-sm  bg-black/80 duration-75 lg:hidden absolute w-[100%] scroll-x ${
+        className={`h-[400px] py-10 backdrop-blur-sm  bg-black/80 duration-75 z-20 lg:hidden absolute w-[100%] scroll-x ${
           isOpen ? "absolute " : " hidden"
         }`}
       >
@@ -89,14 +89,14 @@ export default function Navbar() {
           <Link
             onClick={() => setIsOpen(!isOpen)}
             className="py-[20px] hover:scale-125 hover:bg-black"
-            href="/"
+            href="/service"
           >
             Service
           </Link>
           <Link
             onClick={() => setIsOpen(!isOpen)}
             className="py-[20px] hover:scale-125 hover:bg-black"
-            href="/"
+            href="/teams"
           >
             Team
           </Link>

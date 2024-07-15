@@ -2,6 +2,7 @@ import svg1 from "../../home_assets/footprint-line.svg";
 import svg2 from "../../home_assets/team.svg";
 import svg3 from "../../home_assets/culture-svgrepo-com.svg";
 import Image from "next/image";
+import Link from "next/link";
 export default function Grid() {
   return (
     <div className="max-w-screen-2xl  overflow-hidden text-black">
@@ -22,7 +23,7 @@ export default function Grid() {
             Logistics.
           </p>
         </div>
-        <div className="bg-black/10 backdrop-blur-90 py-5 lg:py-10 px-2 lg:px-10 rounded-xl grid grid-cols-2 lg:grid-cols-3  lg:grid-rows-2 gap-2 ">
+        <div className="bg-black/10  backdrop-blur-sm py-5 lg:py-10 px-2 lg:px-10 rounded-xl grid grid-cols-2 lg:grid-cols-3  lg:grid-rows-2 gap-2 ">
           <div className="lg:row-span-2 col-span-2 lg:col-span-1 lg:py-10  bg-[#0d2030] rounded-2xl  p-3 lg:p-5 lg:items-start flex flex-col  justify-around">
             <div className="rounded-full  w-[70px] h-[70px] bg-[#cdff80]  text-black flex items-center justify-center">
               <Image
@@ -41,9 +42,11 @@ export default function Grid() {
               expanding our reach and refining our services to cater to the
               diverse needs of our clients Quos!
             </p>
-            <button className="border-2 mt-3 border-black p-2 w-max rounded-3xl lg:px-5 font-semibold hover:text-white hover:bg-black bg-[#cdff80]">
-              Learn More →
-            </button>
+            <Link href={"/about"}>
+              <button className="h-full border-2 border-black p-2 w-max rounded-3xl lg:px-5 font-semibold hover:text-white hover:bg-black bg-[#cdff80]">
+                Learn More →
+              </button>
+            </Link>
           </div>
           <div className=" rounded-2xl border-2 h-[300px] flex flex-col  justify-center gap-3 lg:justify-center lg:px-10  p-3 bg-[#cdff80]">
             <Image

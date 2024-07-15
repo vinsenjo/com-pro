@@ -10,11 +10,9 @@ export default function Home() {
   return (
     <div className=" bg-white items-center ">
       <HomeHero />
-
       <Grid />
       <OverView />
       <Service />
-
       {/* <Carausel /> */}
       <Testi />
     </div>

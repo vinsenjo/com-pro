@@ -1,12 +1,14 @@
 interface IProps {
   title: string;
+  move: string;
   caption: string;
 }
 
-export default function TestCard({ title, caption }: IProps) {
+export default function TestCard({ title, caption, move }: IProps) {
   return (
-    <div className="text-black lg:w-auto max-w-[300px] lg:max-w-[400px] min-h-[200px] h-max w-max  bg-white group hover:scale-105  p-[30px] rounded-lg hover:shadow-lg  duration-200">
-      <svg className="text-[#235d58]"
+    <div className="text-black  min-h-[300px] min-w-[400px] bg-white group hover:scale-105  p-[30px] rounded-lg hover:shadow-lg  duration-200">
+      <svg
+        className="text-[#235d58]"
         xmlns="http://www.w3.org/2000/svg"
         width="1.19em"
         height="1em"
@@ -17,8 +19,15 @@ export default function TestCard({ title, caption }: IProps) {
           d="M768 832v384q0 80-56 136t-136 56H192q-80 0-136-56T0 1216V512q0-104 40.5-198.5T150 150T313.5 40.5T512 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136m896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136V512q0-104 40.5-198.5T1046 150t163.5-109.5T1408 0h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136"
         />
       </svg>
-      <h3 className="duration-200 font-bold group-hover:scale-105 text-md du lg:text-xl py-[10px] ">{title}</h3>
-      <p className="text-sm duration-200 group-hover:scale-105 ">{caption}</p>
+      <div className="flex flex-col justify-between">
+        <h3 className="duration-200 font-bold group-hover:scale-105 text-md du lg:text-xl py-[10px] ">
+          {title}
+        </h3>
+        <p className="text-sm lg:text-base duration-200 group-hover:scale-105 py-3">
+          {move}
+        </p>
+        <p className="text-sm duration-200 group-hover:scale-105 ">{caption}</p>
+      </div>
     </div>
   );
 }

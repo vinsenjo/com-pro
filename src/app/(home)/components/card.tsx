@@ -16,10 +16,12 @@ export default function Card({ img, title, caption }: IProps) {
        alt="Card" 
        sizes="100vw" 
        className=" lg:rounded-t-2xl max-h-[250px] group-hover:scale-105 duration-500 object-cover flex-1 w-[100%] h-auto" />
-      <div className="bg-white py-[20px] rounded-xl object-cover">
+      <div className="bg-white py-[20px] rounded-xl  object-cover">
         <p className="text-xl font-bold px-[40px] pt-[10px]">{title}</p>
+        <div className="flex flex-col justify-between  min-h-[270px]">
         <p className="text-sm py-[10px] px-[40px]  ">{caption}</p>
         <button className="bg-[#0d2030] font-semibold text-white mx-[40px] p-[10px] rounded-xl duration-150 border-2 hover:border-black hover:bg-white hover:text-black" >Learn More</button>
+        </div>
       </div>
     </div>
   );

@@ -14,18 +14,18 @@ export default function Service() {
         <div className="pt-[40px] md:pt-[50px] flex flex-col  md:flex-row md:gap-20 gap-5">
           <Card
             img={cardImg1}
-            title="Local Home Moving"
-            caption=" Move your home with ease within the same city or locality. Flazz ensures a smooth transition with professional packing, secure transportation, and efficient unpacking at your new location."
+            title="Small Move"
+            caption="No move is too small for Flazz. If you are moving to another state or even cross country and have fewer items to move, we can move you to your new home with Snapmoves, our small moves program."
           />
           <Card
             img={cardImg2}
-            title="Inter-City Moving"
-            caption="Moving to a different city? Flazz offers reliable inter-city moving services tailored to meet your specific needs. Our experienced team manages every aspect of the move, from packing fragile items to transporting furniture and setting up your new residence."
+            title="Local Move"
+            caption="Moving from one part of the city to another part or a few zip codes away is actually quite common for several reasons. Job change, upgrading or even downsizing your home, and so on. And with these changes, are you considering hiring a local mover for an easy, stress-free, and hassle-free move? If you are, read on for the information that Flazz trusted movers compiled to help you find the right local mover for your needs"
           />
           <Card
             img={cardImg3}
-            title="Inter-Island Moving"
-            caption="Whether you're relocating between islands, Flazz provides comprehensive services to handle the logistics and transportation of your belongings safely and efficiently. From packing at your current location to unpacking at your new home, we ensure a hassle-free experience."
+            title="Long Distance Move"
+            caption="Let us make your long distance move EASY. With mix and match moving services like packing and storage, as well as moving protection, unmatched customer service and some of the best long distance moving company ratings in the country, you can rest easy knowing you are in the hands of Most Trusted Moving Company"
           />
         </div>
       </div>
