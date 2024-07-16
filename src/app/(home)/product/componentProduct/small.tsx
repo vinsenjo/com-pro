@@ -17,7 +17,7 @@ export default async function ServicePage() {
   };
 
   const items = resolveResponse(response);
-  console.log(user.items[0].fields.description1.content);
+
   return (
     <div>
       {/* {user.items.map((item: any,idx:number) => {

@@ -29,7 +29,7 @@ interface IProps {
   
 // }
 
-export default async function ServiceFetch({
+export default function ServiceFetch({
   name,
   desc1,
   desc2,

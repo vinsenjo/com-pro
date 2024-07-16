@@ -32,7 +32,7 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/service"
+            href="/product"
             className="hover:scale-150 hover:font-bold duration-200"
           >
             Service
@@ -89,7 +89,7 @@ export default function Navbar() {
           <Link
             onClick={() => setIsOpen(!isOpen)}
             className="py-[20px] hover:scale-125 hover:bg-black"
-            href="/service"
+            href="/product"
           >
             Service
           </Link>

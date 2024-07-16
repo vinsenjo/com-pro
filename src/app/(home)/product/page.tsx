@@ -6,7 +6,7 @@ import ServiceSmall from "./componentProduct/service";
 import ServicePage from "./componentProduct/small";
 import Small from "./componentProduct/small";
 
-export default function Page() {
+export default function Product() {
   return (
     <div className=" bg-white">
       <ServicePage />
