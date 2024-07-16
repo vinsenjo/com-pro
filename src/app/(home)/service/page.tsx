@@ -9,10 +9,8 @@ import Small from "./components/small";
 export default function Page() {
   return (
     <div className=" bg-white">
-      {/* <ServiceSmall/> */}
       <Small/>
-      {/* <Local /> */}
-      {/* <Long /> */}
+
     </div>
   );
 }
