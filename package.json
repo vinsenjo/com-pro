@@ -10,7 +10,9 @@
     "preview": "next build && serve -s out"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.22.1",
     "@reduxjs/toolkit": "^2.2.6",
+    "contentful-resolve-response": "^1.8.2",
     "framer-motion": "^11.3.0",
     "next": "14.2.4",
     "react": "^18",
@@ -18,6 +20,7 @@
     "react-fast-marquee": "^1.6.5"
   },
   "devDependencies": {
+    "@types/contentful-resolve-response": "^0.1.33",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

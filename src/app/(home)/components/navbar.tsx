@@ -38,7 +38,7 @@ export default function Navbar() {
             Service
           </Link>
           <Link
-            href="/team"
+            href="/teams"
             className="hover:scale-150 hover:font-bold duration-200"
           >
             Team
@@ -68,7 +68,7 @@ export default function Navbar() {
       <div
         
         className={`h-[400px] py-10 backdrop-blur-sm  bg-black/80 duration-75 z-20 lg:hidden absolute w-[100%] scroll-x ${
-          isOpen ? "absolute " : " hidden"
+          isOpen ? "translate-x-0 " : " -translate-x-full"
         }`}
       >
         <div className="text-white flex flex-col text-center font-bold text-xl  overflow-hidden ">

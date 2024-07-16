@@ -4,7 +4,7 @@ export default async function Fetching() {
   });
 
   const user = await res.json();
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="max-w-screen-2xl  overflow-hidden">

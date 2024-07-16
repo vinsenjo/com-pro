@@ -14,7 +14,7 @@ export default function Rating({
           {heading}
         </h2>
         <p className="font-semibold mb-4">{caption}</p>
-        <p>{content}</p>
+        {/* <p>{content}</p> */}
       </div>
   
   );
