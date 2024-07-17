@@ -1,3 +1,4 @@
+
 import ServiceFetch from "./service";
 import resolveResponse from "contentful-resolve-response";
 
@@ -17,6 +18,7 @@ export default async function ServicePage() {
   };
 
   const items = resolveResponse(response);
+console.log(items);
 
   return (
     <div>

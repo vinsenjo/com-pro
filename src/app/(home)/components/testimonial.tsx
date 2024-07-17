@@ -7,7 +7,7 @@ export default function Testi() {
         <h2 className="text-3xl lg:self-start mb-5 pb-3 border-b-2 border-white border-solid  text-black ">
           What Our Clients Say
         </h2>
-        <div className="flex  lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-5 px-[50px] justify-around  gap-4 lg:flex-wrap flex-row m-auto">
+        <div className="flex  lg:grid lg:grid-cols-3  lg:gap-5 px-[50px] justify-around  gap-4 lg:flex-wrap flex-row m-auto">
           <TestCard
             title="Nelson A."
             move="Moved from Shelby Township, MI to Raritan, NJ"
@@ -24,7 +24,7 @@ export default function Testi() {
             caption="From start to finish the experience was great. Attention to detail, follow up and care of our household belongings was exceptional. Communication was excellent at every step too. That includes the meeting to evaluate the furniture being moved, quotes, details needed to be addressed, coordination of moving trucks, and finally the owner operator who transported our items."
           />
           {/* belum di edit */}
-          <TestCard
+          {/* <TestCard
             title="Chris C."
             move="Moved from Rochester, NY to New Smyrna Beach, FL"
             caption="From start to finish the experience was great. Attention to detail, follow up and care of our household belongings was exceptional. Communication was excellent at every step too. That includes the meeting to evaluate the furniture being moved, quotes, details needed to be addressed, coordination of moving trucks, and finally the owner operator who transported our items."
@@ -38,7 +38,7 @@ export default function Testi() {
             title="Chris C."
             move="Moved from Rochester, NY to New Smyrna Beach, FL"
             caption="From start to finish the experience was great. Attention to detail, follow up and care of our household belongings was exceptional. Communication was excellent at every step too. That includes the meeting to evaluate the furniture being moved, quotes, details needed to be addressed, coordination of moving trucks, and finally the owner operator who transported our items."
-          />
+          /> */}
        
         </div>
       </section>
