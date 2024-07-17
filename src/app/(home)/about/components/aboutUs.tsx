@@ -12,6 +12,8 @@ export default function AboutUs() {
           src={img}
           alt="Picture of the author"
           priority
+          width={500}
+          height={500}
           className="md:w-[2000px] w-[800px] rounded-xl  lg:rounded-xl  "
         />
       </div>
